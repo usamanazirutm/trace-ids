@@ -1,5 +1,9 @@
 # TRACE — Traffic-Realisable Counterfactual Explanations for IoT Intrusion Detection
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23681520.svg)](https://doi.org/10.5281/zenodo.23681520)
+[![Release](https://img.shields.io/badge/release-tracev1-blue)](https://github.com/usamanazirutm/trace-ids/releases/tag/tracev1)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 Code accompanying the manuscript
 
 > **Nazir, M. U., & Ngadi, M. A.** *TRACE: Traffic-Realisable Counterfactual Explanations for Deep Learning-Based IoT Intrusion Detection* (under review).
@@ -114,7 +118,21 @@ A counterfactual explanation states which changes would make a flagged flow look
 
 ## 8. Citation
 
-If you use this code, please cite the paper (details will be updated on publication) and the software archive (see `CITATION.cff`).
+If you use this code, please cite the paper (details will be updated on publication) and the software archive:
+
+> Nazir, M. U., & Ngadi, M. A. (2026). *TRACE: Traffic-Realisable Actionable Counterfactual Explanations for IoT Intrusion Detection* (release tracev1). Zenodo. https://doi.org/10.5281/zenodo.23681520
+
+```bibtex
+@software{nazir2026trace,
+  author    = {Nazir, Muhammad Usama and Ngadi, Md Asri},
+  title     = {TRACE: Traffic-Realisable Actionable Counterfactual Explanations for IoT Intrusion Detection},
+  year      = {2026},
+  version   = {tracev1},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23681520},
+  url       = {https://doi.org/10.5281/zenodo.23681520}
+}
+```
 
 ## 9. License
 

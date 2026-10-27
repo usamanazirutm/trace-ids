@@ -1,10 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "TRACE: Traffic-Realisable Actionable Counterfactual Explanations for IoT Intrusion Detection"
-version: 1.0.0
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23681520
+    description: "Zenodo archive of release tracev1"
+version: tracev1
+doi: 10.5281/zenodo.23681520
 date-released: 2026-10-27
 license: MIT
 repository-code: "https://github.com/usamanazirutm/trace-ids"
+url: "https://github.com/usamanazirutm/trace-ids/releases/tag/tracev1"
 authors:
   - family-names: Nazir
     given-names: Muhammad Usama

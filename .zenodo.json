@@ -1,11 +1,31 @@
 {
   "title": "TRACE: Traffic-Realisable Actionable Counterfactual Explanations for IoT Intrusion Detection",
   "upload_type": "software",
-  "description": "Code, configuration and summary results for the manuscript on feasible counterfactual explanations for deep-learning-based IoT intrusion detection (UNSW-NB15, CICIoT2023).",
+  "description": "Code, configuration and summary results for the manuscript 'TRACE: Traffic-Realisable Counterfactual Explanations for Deep Learning-Based IoT Intrusion Detection' (UNSW-NB15, CICIoT2023). Version DOI of release tracev1: 10.5281/zenodo.23681520.",
   "creators": [
-    {"name": "Nazir, Muhammad Usama", "affiliation": "Universiti Teknologi Malaysia"},
-    {"name": "Ngadi, Md Asri", "affiliation": "Universiti Teknologi Malaysia"}
+    {
+      "name": "Nazir, Muhammad Usama",
+      "affiliation": "Universiti Teknologi Malaysia"
+    },
+    {
+      "name": "Ngadi, Md Asri",
+      "affiliation": "Universiti Teknologi Malaysia"
+    }
   ],
   "license": "MIT",
-  "keywords": ["intrusion detection", "IoT", "explainable AI", "counterfactual explanations", "feasibility constraints"]
+  "keywords": [
+    "intrusion detection",
+    "IoT",
+    "explainable AI",
+    "counterfactual explanations",
+    "feasibility constraints"
+  ],
+  "version": "tracev1",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/usamanazirutm/trace-ids/releases/tag/tracev1",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
 }
