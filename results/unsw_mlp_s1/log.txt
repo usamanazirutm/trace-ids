@@ -1,0 +1,55 @@
+[unsw/mlp/s1] {'raw': 257673, 'after_dedup': 162744, 'after_conflict': 151238, 'used': 151238, 'train': 105866, 'val': 22686, 'test': 22686, 'classes': 10, 'class_counts': {'Normal': 85307, 'Exploits': 25451, 'Fuzzers': 18749, 'Reconnaissance': 8419, 'Generic': 7283, 'DoS': 3624, 'Shellcode': 1446, 'Analysis': 450, 'Backdoor': 350, 'Worms': 159}, 'benign': 'Normal'}
+  epoch 01 loss 1.1787 val macroF1 0.4009 (2s)
+  epoch 02 loss 0.8675 val macroF1 0.4306 (1s)
+  epoch 03 loss 0.8122 val macroF1 0.4668 (1s)
+  epoch 04 loss 0.7766 val macroF1 0.4952 (2s)
+  epoch 05 loss 0.7512 val macroF1 0.5089 (2s)
+  epoch 06 loss 0.7338 val macroF1 0.5198 (2s)
+  epoch 07 loss 0.7146 val macroF1 0.5140 (2s)
+  epoch 08 loss 0.6998 val macroF1 0.5503 (2s)
+  epoch 09 loss 0.6859 val macroF1 0.5467 (1s)
+  epoch 10 loss 0.6777 val macroF1 0.5497 (1s)
+  epoch 11 loss 0.6674 val macroF1 0.5344 (1s)
+  epoch 12 loss 0.6534 val macroF1 0.5689 (1s)
+  epoch 13 loss 0.6453 val macroF1 0.5670 (2s)
+  epoch 14 loss 0.6392 val macroF1 0.5627 (2s)
+  epoch 15 loss 0.6383 val macroF1 0.5726 (1s)
+  epoch 16 loss 0.6318 val macroF1 0.5605 (1s)
+  epoch 17 loss 0.6283 val macroF1 0.5727 (2s)
+  epoch 18 loss 0.6234 val macroF1 0.5706 (2s)
+  epoch 19 loss 0.6192 val macroF1 0.5725 (2s)
+  epoch 20 loss 0.6151 val macroF1 0.5825 (2s)
+  epoch 21 loss 0.6142 val macroF1 0.5714 (1s)
+  epoch 22 loss 0.6120 val macroF1 0.5773 (1s)
+  epoch 23 loss 0.6062 val macroF1 0.5746 (1s)
+  epoch 24 loss 0.5983 val macroF1 0.5807 (1s)
+  epoch 25 loss 0.5977 val macroF1 0.5802 (1s)
+  detection: {'accuracy': 0.8077669046989333, 'macro_precision': 0.572926907990054, 'macro_recall': 0.6546629637630165, 'macro_f1': 0.5853685156167062, 'weighted_f1': 0.8189479801325914, 'alert_DR': 0.9613751263902932, 'alert_FPR': 0.1806814629571741, 'alert_AUROC': 0.9727841043602163, 'model': 'mlp', 'seed': 1, 'train_time_s': 37.55223321914673, 'epochs': 25, 'infer_ms_per_flow': 0.00150097769046391, 'params': 50314}
+  alerts test: FP 2312 TP(sub) 1501 | val: FP 2420 TP(sub) 1500
+  NUN te: valid 0.996
+  TRACE/te batch 1/4: valid 0.981 (14s)
+  TRACE/te batch 2/4: valid 0.979 (14s)
+  TRACE/te batch 3/4: valid 0.985 (15s)
+  TRACE/te batch 4/4: valid 0.984 (10s)
+  TRACEw/te batch 1/4: valid 1.000 (15s)
+  TRACEw/te batch 2/4: valid 1.000 (14s)
+  TRACEw/te batch 3/4: valid 1.000 (15s)
+  TRACEw/te batch 4/4: valid 1.000 (12s)
+  Wachter/te batch 1/4: valid 0.982 (1s)
+  Wachter/te batch 2/4: valid 0.981 (1s)
+  Wachter/te batch 3/4: valid 0.987 (1s)
+  Wachter/te batch 4/4: valid 0.987 (1s)
+                           method     n  validity    time_ms  feasible_all  feasible_immutable  feasible_integer  feasible_bounds  feasible_relational  feasible_derived  valid_and_feasible  proximity_median  proximity_mean  sparsity_mean  sparsity_median  plaus_rel_knn_median  in_distribution  warm_share
+0                             NUN  3813  0.996328   0.320774           1.0                 1.0               1.0         1.000000             1.000000               1.0            0.996328          6.401865        9.986181      15.572782             16.0              0.987633         0.932351         NaN
+1                NUN|false_alarms  2312  0.999135   0.320774           1.0                 1.0               1.0         1.000000             1.000000               1.0            0.999135          5.045421        6.858654      14.250216             15.0              0.942793         0.967100         NaN
+2                 NUN|true_alerts  1501  0.992005   0.320774           1.0                 1.0               1.0         1.000000             1.000000               1.0            0.992005         13.011654       14.838154      17.624580             19.0              1.044936         0.878442         NaN
+3                           TRACE  3813  1.000000  28.951103           1.0                 1.0               1.0         1.000000             1.000000               1.0            1.000000          4.014188        5.965983       6.057173              5.0              1.598286         0.809599    0.860477
+4              TRACE|false_alarms  2312  1.000000  28.951103           1.0                 1.0               1.0         1.000000             1.000000               1.0            1.000000          2.709513        4.164974       5.086938              4.0              1.377323         0.918685         NaN
+5               TRACE|true_alerts  1501  1.000000  28.951103           1.0                 1.0               1.0         1.000000             1.000000               1.0            1.000000          7.888189        8.740089       7.551632              7.0              2.332052         0.641572         NaN
+6                TRACE-alertstart  3813  0.982166  13.969616           1.0                 1.0               1.0         1.000000             1.000000               1.0            0.982166          4.345466        6.207986       6.202136              5.0              3.243462         0.649933         NaN
+7   TRACE-alertstart|false_alarms  2312  0.979671  13.969616           1.0                 1.0               1.0         1.000000             1.000000               1.0            0.979671          3.077784        4.067942       5.149227              4.0              2.665205         0.821634         NaN
+8    TRACE-alertstart|true_alerts  1501  0.986009  13.969616           1.0                 1.0               1.0         1.000000             1.000000               1.0            0.986009          7.460790        9.483121       7.813514              7.0              5.389682         0.387162         NaN
+9                         Wachter  3813  0.984264   1.196740           0.0                 1.0               0.0         0.999734             0.945910               0.0            0.000000          4.232041        5.121576      22.682121             25.0              4.199889         0.487610         NaN
+10           Wachter|false_alarms  2312  0.981834   1.196740           0.0                 1.0               0.0         1.000000             0.974449               0.0            0.000000          3.275483        3.773834      22.959031             25.0              3.477610         0.625110         NaN
+11            Wachter|true_alerts  1501  0.988008   1.196740           0.0                 1.0               0.0         0.999326             0.902225               0.0            0.000000          6.472942        7.184538      22.258260             24.0              6.578274         0.277141         NaN
+PIPELINE COMPLETE

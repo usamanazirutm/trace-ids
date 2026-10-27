@@ -1,0 +1,10 @@
+{
+ "n": 762,
+ "top5_overlap_mean": 0.5060367454068242,
+ "top1_match_rate": 0.41601049868766404,
+ "spearman_mean": 0.5542569811070025,
+ "random_top5_overlap": 0.23809523809523808,
+ "d_mutable": 21,
+ "top5_overlap_fp": 0.5027190332326285,
+ "top5_overlap_tp": 0.528
+}

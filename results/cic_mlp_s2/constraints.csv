@@ -1,0 +1,9 @@
+relation,kind,train_satisfaction,enforced,test_satisfaction
+Min <= Max,clamp,1.0,True,1.0
+ack_count <= Number,clamp,1.0,True,1.0
+syn_count <= Number,clamp,1.0,True,1.0
+fin_count <= Number,clamp,1.0,True,1.0
+rst_count <= Number,clamp,1.0,True,1.0
+Number*Min <= Tot sum <= Number*Max,clamp,1.0,True,1.0
+AVG = Tot sum / Number,derive,1.0,True,1.0
+Variance = Std^2,derive,1.0,True,1.0

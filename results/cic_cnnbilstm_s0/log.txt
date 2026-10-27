@@ -1,0 +1,121 @@
+[cic/cnnbilstm/s0] {'raw': 918764, 'after_dedup': 918764, 'after_conflict': 918764, 'used': 231384, 'train': 161968, 'val': 34708, 'test': 34708, 'classes': 34, 'class_counts': {'BENIGN': 34158, 'DDOS-UDP_FLOOD': 10000, 'VULNERABILITYSCAN': 10000, 'DDOS-PSHACK_FLOOD': 10000, 'DOS-TCP_FLOOD': 10000, 'DDOS-TCP_FLOOD': 10000, 'DOS-SYN_FLOOD': 10000, 'DDOS-ICMP_FLOOD': 10000, 'DDOS-RSTFINFLOOD': 10000, 'DDOS-ICMP_FRAGMENTATION': 10000, 'MIRAI-GREIP_FLOOD': 10000, 'DOS-UDP_FLOOD': 10000, 'MIRAI-UDPPLAIN': 10000, 'DDOS-SYN_FLOOD': 10000, 'DDOS-SYNONYMOUSIP_FLOOD': 10000, 'MIRAI-GREETH_FLOOD': 10000, 'MITM-ARPSPOOFING': 9024, 'DDOS-ACK_FRAGMENTATION': 8938, 'DDOS-UDP_FRAGMENTATION': 8793, 'DNS_SPOOFING': 5568, 'RECON-HOSTDISCOVERY': 4206, 'RECON-OSSCAN': 2917, 'RECON-PORTSCAN': 2570, 'DOS-HTTP_FLOOD': 2356, 'DDOS-HTTP_FLOOD': 906, 'DDOS-SLOWLORIS': 733, 'DICTIONARYBRUTEFORCE': 416, 'BROWSERHIJACKING': 162, 'COMMANDINJECTION': 157, 'SQLINJECTION': 156, 'XSS': 139, 'BACKDOOR_MALWARE': 91, 'RECON-PINGSWEEP': 55, 'UPLOADING_ATTACK': 39}, 'benign': 'BENIGN'}
+  epoch 01 loss 1.9706 val macroF1 0.3706 (24s)
+  epoch 02 loss 1.0731 val macroF1 0.4080 (20s)
+  epoch 03 loss 1.0031 val macroF1 0.4362 (19s)
+  epoch 04 loss 0.9627 val macroF1 0.4513 (19s)
+  epoch 05 loss 0.9408 val macroF1 0.4584 (19s)
+  epoch 06 loss 0.9197 val macroF1 0.4729 (19s)
+  epoch 07 loss 0.9077 val macroF1 0.4610 (19s)
+  epoch 08 loss 0.8938 val macroF1 0.4821 (19s)
+  epoch 09 loss 0.8845 val macroF1 0.4841 (18s)
+  epoch 10 loss 0.8717 val macroF1 0.4733 (18s)
+  epoch 11 loss 0.8617 val macroF1 0.4894 (46s)
+  epoch 12 loss 0.8544 val macroF1 0.4873 (39s)
+  epoch 13 loss 0.8447 val macroF1 0.5089 (39s)
+  epoch 14 loss 0.8371 val macroF1 0.4908 (43s)
+  epoch 15 loss 0.8357 val macroF1 0.4911 (41s)
+  epoch 16 loss 0.8319 val macroF1 0.5036 (40s)
+  epoch 17 loss 0.8082 val macroF1 0.5244 (40s)
+  epoch 18 loss 0.8035 val macroF1 0.5315 (39s)
+  epoch 19 loss 0.8050 val macroF1 0.5303 (42s)
+  epoch 20 loss 0.8006 val macroF1 0.5257 (46s)
+  epoch 21 loss 0.7976 val macroF1 0.5216 (39s)
+  epoch 22 loss 0.7880 val macroF1 0.5404 (42s)
+  epoch 23 loss 0.7848 val macroF1 0.5387 (40s)
+  epoch 24 loss 0.7820 val macroF1 0.5375 (40s)
+  epoch 25 loss 0.7828 val macroF1 0.5369 (39s)
+  epoch 26 loss 0.7766 val macroF1 0.5434 (40s)
+  epoch 27 loss 0.7726 val macroF1 0.5400 (44s)
+  epoch 28 loss 0.7731 val macroF1 0.5467 (45s)
+  epoch 29 loss 0.7708 val macroF1 0.5399 (50s)
+  epoch 30 loss 0.7733 val macroF1 0.5425 (45s)
+  detection: {'accuracy': 0.734009450270831, 'macro_precision': 0.6074525015884567, 'macro_recall': 0.5517900322344759, 'macro_f1': 0.5503479329456983, 'weighted_f1': 0.7238605794345324, 'alert_DR': 0.9563615467820443, 'alert_FPR': 0.17076502732240437, 'alert_AUROC': 0.9771955233043665, 'model': 'cnnbilstm', 'seed': 0, 'train_time_s': 1032.155198097229, 'epochs': 30, 'infer_ms_per_flow': 0.09121232776305527, 'params': 79202}
+  XGBoost rounds 20
+  XGBoost rounds 40
+  XGBoost rounds 60
+  XGBoost rounds 80
+  XGBoost rounds 100
+  XGBoost rounds 120
+  XGBoost rounds 140
+  XGBoost rounds 160
+  XGBoost rounds 180
+  XGBoost rounds 200
+  RandomForest trees 10
+  RandomForest trees 20
+  RandomForest trees 30
+  RandomForest trees 40
+  RandomForest trees 50
+  RandomForest trees 60
+  RandomForest trees 70
+  RandomForest trees 80
+  RandomForest trees 90
+  RandomForest trees 100
+  references: [{'accuracy': 0.8017459951596174, 'macro_precision': 0.651801866025125, 'macro_recall': 0.6188136551052392, 'macro_f1': 0.6250670819675667, 'weighted_f1': 0.7974075084481873, 'alert_DR': 0.9702203893996755, 'alert_FPR': 0.1360265417642467, 'alert_AUROC': 0.9869359542618349, 'model': 'XGBoost', 'train_time_s': 299.8969683647156, 'infer_ms_per_flow': 0.16928749506520527}, {'accuracy': 0.793736314394376, 'macro_precision': 0.6368064564863806, 'macro_recall': 0.6022422538046859, 'macro_f1': 0.6095063114565614, 'weighted_f1': 0.7889451827076832, 'alert_DR': 0.9649810708491077, 'alert_FPR': 0.12763466042154567, 'alert_AUROC': 0.9857468330561616, 'model': 'RandomForest', 'train_time_s': 40.521984338760376, 'infer_ms_per_flow': 0.04041225827480772}]
+  alerts test: FP 875 TP(sub) 1002 | val: FP 886 TP(sub) 1005
+  NUN te: valid 0.483
+  TRACE/te batch 1/2: valid 0.017 (67s)
+  TRACE/te batch 2/2: valid 0.004 (55s)
+  Wachter/te batch 1/2: valid 0.896 (47s)
+  Wachter/te batch 2/2: valid 0.299 (39s)
+  TRACE-noplaus/te batch 1/1: valid 0.025 (32s)
+  TRACE-norel/te batch 1/1: valid 0.007 (37s)
+  TRACE-norevert/te batch 1/1: valid 0.008 (37s)
+  GrowingSpheres/te batch 1/6: valid 1.000 (10s)
+  GrowingSpheres/te batch 2/6: valid 1.000 (10s)
+  GrowingSpheres/te batch 3/6: valid 0.980 (11s)
+  GrowingSpheres/te batch 4/6: valid 0.700 (20s)
+  GrowingSpheres/te batch 5/6: valid 0.700 (21s)
+  GrowingSpheres/te batch 6/6: valid 0.760 (20s)
+  sens_b0.01_g0.0/te batch 1/1: valid 0.040 (10s)
+  sens_b0.01_g0.05/te batch 1/1: valid 0.005 (11s)
+  sens_b0.01_g0.25/te batch 1/1: valid 0.010 (11s)
+  sens_b0.05_g0.0/te batch 1/1: valid 0.035 (10s)
+  sens_b0.05_g0.05/te batch 1/1: valid 0.010 (11s)
+  sens_b0.05_g0.25/te batch 1/1: valid 0.010 (11s)
+  sens_b0.25_g0.0/te batch 1/1: valid 0.035 (10s)
+  sens_b0.25_g0.05/te batch 1/1: valid 0.035 (11s)
+  sens_b0.25_g0.25/te batch 1/1: valid 0.010 (11s)
+                  method     n  validity     time_ms  feasible_all  feasible_immutable  feasible_integer  feasible_bounds  feasible_relational  feasible_derived  valid_and_feasible  proximity_median  proximity_mean  sparsity_mean  sparsity_median  plaus_rel_knn_median  in_distribution
+0                    NUN  1877  0.483218    1.003501      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.483218          4.644977        7.452893      10.558986             11.0              1.641206         0.915105
+1       NUN|false_alarms   875  0.890286    1.003501      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.890286          4.326731        6.241344      10.413350             11.0              1.580357         0.930680
+2        NUN|true_alerts  1002  0.127745    1.003501      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.127745          7.590982       14.826303      11.445312             12.0              2.304999         0.820312
+3                  TRACE  1877  0.010655   65.140857      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.010655          3.705103        5.430974       2.450000              1.5              2.354611         0.700000
+4     TRACE|false_alarms   875  0.018286   65.140857      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.018286          2.454874        5.188399       2.312500              1.0              2.742255         0.687500
+5      TRACE|true_alerts  1002  0.003992   65.140857      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.003992          6.159981        6.401275       3.000000              3.0              2.079947         0.750000
+6                Wachter  1877  0.624933   45.754606      0.000000            0.000000          0.001705              1.0             0.207161          0.000000            0.000000          3.794122        5.847790      19.161978             20.0              3.037149         0.604433
+7   Wachter|false_alarms   875  0.986286   45.754606      0.000000            0.000000          0.001159              1.0             0.136732          0.000000            0.000000          3.240061        3.410640      19.665122             21.0              2.555253         0.743917
+8    Wachter|true_alerts  1002  0.309381   45.754606      0.000000            0.000000          0.003226              1.0             0.403226          0.000000            0.000000         12.554370       12.632503      17.761290             18.0             10.680603         0.216129
+9          TRACE-noplaus   600  0.025000   53.519073      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.025000          1.080913        3.366781       1.666667              1.0              4.687613         0.400000
+10           TRACE-norel   600  0.006667   61.295563      0.250000            1.000000          1.000000              1.0             0.750000          0.250000            0.001667         11.561426       13.011541       4.500000              4.0              3.228633         0.750000
+11        TRACE-norevert   600  0.008333   61.508993      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.008333         14.711090       13.348313      11.200000             11.0              4.791452         0.200000
+12        GrowingSpheres   600  0.856667  152.682403      0.071984            0.114786          0.501946              1.0             0.595331          0.342412            0.061667         12.976303       74.813559       5.463035              5.0              5.048134         0.435798
+13           TRACE@bench   600  0.008333   65.140857      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.008333          7.565174        6.729862       3.800000              3.0              4.130150         0.400000
+14         Wachter@bench   600  0.645000   45.754606      0.000000            0.000000          0.000000              1.0             0.222222          0.000000            0.000000          3.814529        6.015651      18.981912             20.0              3.162324         0.583979
+15             NUN@bench   600  0.501667    1.003501      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.501667          4.708554        7.922231      10.504983             11.0              1.614500         0.923588
+  TRACEw/te batch 1/2: valid 0.788 (74s)
+  TRACEw/te batch 2/2: valid 0.122 (57s)
+  TRACE-noplausw/te batch 1/1: valid 0.505 (36s)
+  TRACE-norelw/te batch 1/1: valid 0.502 (41s)
+  TRACE-norevertw/te batch 1/1: valid 0.502 (40s)
+                           method     n  validity     time_ms  feasible_all  feasible_immutable  feasible_integer  feasible_bounds  feasible_relational  feasible_derived  valid_and_feasible  proximity_median  proximity_mean  sparsity_mean  sparsity_median  plaus_rel_knn_median  in_distribution  warm_share
+0                             NUN  1877  0.483218    1.003501      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.483218          4.644977        7.452893      10.558986             11.0              1.641206         0.915105         NaN
+1                NUN|false_alarms   875  0.890286    1.003501      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.890286          4.326731        6.241344      10.413350             11.0              1.580357         0.930680         NaN
+2                 NUN|true_alerts  1002  0.127745    1.003501      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.127745          7.590982       14.826303      11.445312             12.0              2.304999         0.820312         NaN
+3                           TRACE  1877  0.485349  134.375240      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.485349          1.285815        3.570725       2.840834              2.0              1.976838         0.859495    0.482152
+4              TRACE|false_alarms   875  0.893714  134.375240      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.893714          1.156135        2.616984       2.653453              2.0              1.916745         0.886189         NaN
+5               TRACE|true_alerts  1002  0.128743  134.375240      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.128743          3.356685        9.352323       3.976744              4.0              2.809983         0.697674         NaN
+6                TRACE-alertstart  1877  0.010655   65.140857      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.010655          3.705103        5.430974       2.450000              1.5              2.354611         0.700000         NaN
+7   TRACE-alertstart|false_alarms   875  0.018286   65.140857      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.018286          2.454874        5.188399       2.312500              1.0              2.742255         0.687500         NaN
+8    TRACE-alertstart|true_alerts  1002  0.003992   65.140857      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.003992          6.159981        6.401275       3.000000              3.0              2.079947         0.750000         NaN
+9                         Wachter  1877  0.624933   45.754606      0.000000            0.000000          0.001705              1.0             0.207161          0.000000            0.000000          3.794122        5.847790      19.161978             20.0              3.037149         0.604433         NaN
+10           Wachter|false_alarms   875  0.986286   45.754606      0.000000            0.000000          0.001159              1.0             0.136732          0.000000            0.000000          3.240061        3.410640      19.665122             21.0              2.555253         0.743917         NaN
+11            Wachter|true_alerts  1002  0.309381   45.754606      0.000000            0.000000          0.003226              1.0             0.403226          0.000000            0.000000         12.554370       12.632503      17.761290             18.0             10.680603         0.216129         NaN
+12                  TRACE-noplaus   600  0.505000  112.958100      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.505000          1.209892        3.600305       2.273927              2.0              2.017141         0.854785         NaN
+13                    TRACE-norel   600  0.501667  129.312505      0.770764            1.000000          1.000000              1.0             0.980066          0.774086            0.386667          1.282997        4.028701       2.727575              2.0              1.950593         0.873754         NaN
+14                 TRACE-norevert   600  0.501667  127.413911      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.501667          4.688331        7.871251      10.495017             11.0              1.621761         0.920266         NaN
+15                 GrowingSpheres   600  0.856667  152.682403      0.071984            0.114786          0.501946              1.0             0.595331          0.342412            0.061667         12.976303       74.813559       5.463035              5.0              5.048134         0.435798         NaN
+16                    TRACE@bench   600  0.501667  134.375240      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.501667          1.282993        4.129967       2.926910              2.0              1.950933         0.873754         NaN
+17         TRACE-alertstart@bench   600  0.008333   65.140857      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.008333          7.565174        6.729862       3.800000              3.0              4.130150         0.400000         NaN
+18                  Wachter@bench   600  0.645000   45.754606      0.000000            0.000000          0.000000              1.0             0.222222          0.000000            0.000000          3.814529        6.015651      18.981912             20.0              3.162324         0.583979         NaN
+19                      NUN@bench   600  0.501667    1.003501      1.000000            1.000000          1.000000              1.0             1.000000          1.000000            0.501667          4.708554        7.922231      10.504983             11.0              1.614500         0.923588         NaN
+PIPELINE COMPLETE

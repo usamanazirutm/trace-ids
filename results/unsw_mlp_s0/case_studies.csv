@@ -1,0 +1,9 @@
+case,true_class,pred_class,p_benign,cost,feature,original,counterfactual,norm_change
+false_alarm,Normal,Fuzzers,0.31911805272102356,2.917539236174396,ct_srv_src,16.0,2.0,2.5025002821386466
+false_alarm,Normal,Fuzzers,0.31911805272102356,2.917539236174396,ct_srv_dst,3.0,2.0,0.4150375037454119
+true_alert,Reconnaissance,Reconnaissance,6.335510261124e-05,8.082309811892292,sttl,254.0,87.0,5.3870967761162785
+true_alert,Reconnaissance,Reconnaissance,6.335510261124e-05,8.082309811892292,ct_srv_dst,1.0,3.0,1.0000000000000002
+true_alert,Reconnaissance,Reconnaissance,6.335510261124e-05,8.082309811892292,ct_dst_src_ltm,1.0,2.0,1.0
+true_alert,Reconnaissance,Reconnaissance,6.335510261124e-05,8.082309811892292,ct_srv_src,2.0,3.0,0.4150374829769136
+true_alert,Reconnaissance,Reconnaissance,6.335510261124e-05,8.082309811892292,rate,69.164265,60.149594208177646,0.09476994513429376
+true_alert,Reconnaissance,Reconnaissance,6.335510261124e-05,8.082309811892292,dur,0.216875,0.24937824099170186,0.07876888310659759

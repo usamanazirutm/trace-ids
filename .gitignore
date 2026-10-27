@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# data are not redistributed
+data/unsw/
+data/cic/
+*.parquet
+*.csv.gz
+# large intermediate artefacts
+results/**/*.npz
+results/**/*.pt
+results/**/*.pkl
+results/**/xgb.json
+results/**/_est_*.json
+results/**/train_state.pt
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz

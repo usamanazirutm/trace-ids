@@ -1,0 +1,9 @@
+relation,kind,train_satisfaction,enforced,test_satisfaction
+sloss <= spkts,clamp,0.9999244327735062,True,0.9998236798025214
+dloss <= dpkts,clamp,1.0,True,1.0
+28*spkts <= sbytes <= 1504*spkts,clamp,1.0,True,1.0
+28*dpkts <= dbytes <= 1500*dpkts,clamp,1.0,True,1.0
+smean = sbytes / spkts,derive,1.0,True,1.0
+dmean = dbytes / dpkts,derive,1.0,True,1.0
+rate = (spkts + dpkts - 1) / dur,derive,0.9998299737403888,True,0.999735519703782
+tcprtt = synack + ackdat,derive,1.0,True,1.0

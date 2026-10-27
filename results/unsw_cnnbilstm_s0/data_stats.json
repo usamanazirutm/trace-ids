@@ -1,0 +1,23 @@
+{
+ "raw": 257673,
+ "after_dedup": 162744,
+ "after_conflict": 151238,
+ "used": 151238,
+ "train": 105866,
+ "val": 22686,
+ "test": 22686,
+ "classes": 10,
+ "class_counts": {
+  "Normal": 85307,
+  "Exploits": 25451,
+  "Fuzzers": 18749,
+  "Reconnaissance": 8419,
+  "Generic": 7283,
+  "DoS": 3624,
+  "Shellcode": 1446,
+  "Analysis": 450,
+  "Backdoor": 350,
+  "Worms": 159
+ },
+ "benign": "Normal"
+}

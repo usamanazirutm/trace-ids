@@ -1,0 +1,166 @@
+[unsw/mlp/s0] {'raw': 257673, 'after_dedup': 162744, 'after_conflict': 151238, 'used': 151238, 'train': 105866, 'val': 22686, 'test': 22686, 'classes': 10, 'class_counts': {'Normal': 85307, 'Exploits': 25451, 'Fuzzers': 18749, 'Reconnaissance': 8419, 'Generic': 7283, 'DoS': 3624, 'Shellcode': 1446, 'Analysis': 450, 'Backdoor': 350, 'Worms': 159}, 'benign': 'Normal'}
+  epoch 01 loss 1.1727 val macroF1 0.3909 (1s)
+  epoch 02 loss 0.8767 val macroF1 0.4216 (1s)
+  epoch 03 loss 0.8155 val macroF1 0.4759 (1s)
+  epoch 04 loss 0.7782 val macroF1 0.4917 (1s)
+  epoch 05 loss 0.7524 val macroF1 0.5116 (1s)
+  epoch 06 loss 0.7291 val macroF1 0.5263 (1s)
+  epoch 07 loss 0.7107 val macroF1 0.5436 (1s)
+  epoch 08 loss 0.6954 val macroF1 0.5418 (1s)
+  epoch 09 loss 0.6823 val macroF1 0.5424 (1s)
+  epoch 10 loss 0.6704 val macroF1 0.5501 (1s)
+  epoch 11 loss 0.6592 val macroF1 0.5518 (1s)
+  epoch 12 loss 0.6502 val macroF1 0.5757 (1s)
+  epoch 13 loss 0.6412 val macroF1 0.5580 (1s)
+  epoch 14 loss 0.6406 val macroF1 0.5607 (1s)
+  epoch 15 loss 0.6313 val macroF1 0.5589 (1s)
+  epoch 16 loss 0.6176 val macroF1 0.5777 (1s)
+  epoch 17 loss 0.6126 val macroF1 0.5725 (1s)
+  epoch 18 loss 0.6105 val macroF1 0.5712 (1s)
+  epoch 19 loss 0.6078 val macroF1 0.5682 (1s)
+  epoch 20 loss 0.6000 val macroF1 0.5840 (1s)
+  epoch 21 loss 0.5976 val macroF1 0.5805 (1s)
+  epoch 22 loss 0.5992 val macroF1 0.5860 (1s)
+  epoch 23 loss 0.5957 val macroF1 0.5800 (1s)
+  epoch 24 loss 0.5945 val macroF1 0.5786 (1s)
+  epoch 25 loss 0.5939 val macroF1 0.5947 (1s)
+  epoch 26 loss 0.5919 val macroF1 0.5962 (1s)
+  epoch 27 loss 0.5899 val macroF1 0.5872 (1s)
+  epoch 28 loss 0.5894 val macroF1 0.5926 (1s)
+  epoch 29 loss 0.5881 val macroF1 0.5933 (1s)
+  epoch 30 loss 0.5838 val macroF1 0.5895 (1s)
+  detection: {'accuracy': 0.8008022568985277, 'macro_precision': 0.5776778175462007, 'macro_recall': 0.7150710785439199, 'macro_f1': 0.6052255224700707, 'weighted_f1': 0.8149942576784553, 'alert_DR': 0.9713852376137513, 'alert_FPR': 0.2031884964051266, 'alert_AUROC': 0.9727238605593066, 'model': 'mlp', 'seed': 0, 'train_time_s': 41.18866562843323, 'epochs': 30, 'infer_ms_per_flow': 0.00129883791481199, 'params': 50314}
+  XGBoost rounds 20
+  XGBoost rounds 40
+  XGBoost rounds 60
+  XGBoost rounds 80
+  XGBoost rounds 100
+  XGBoost rounds 120
+  XGBoost rounds 140
+  XGBoost rounds 160
+  XGBoost rounds 180
+  XGBoost rounds 200
+  RandomForest trees 10
+  RandomForest trees 20
+  RandomForest trees 30
+  RandomForest trees 40
+  RandomForest trees 50
+  RandomForest trees 60
+  RandomForest trees 70
+  RandomForest trees 80
+  RandomForest trees 90
+  RandomForest trees 100
+  references: [{'accuracy': 0.8689500132240148, 'macro_precision': 0.7332177923264446, 'macro_recall': 0.7776275427400382, 'macro_f1': 0.7453365274016985, 'weighted_f1': 0.8721358181605608, 'alert_DR': 0.9492416582406471, 'alert_FPR': 0.11362925914348233, 'alert_AUROC': 0.9830548229650886, 'model': 'XGBoost', 'train_time_s': 57.822009563446045, 'infer_ms_per_flow': 0.04474563719702284}, {'accuracy': 0.8725645772723265, 'macro_precision': 0.7731628352638741, 'macro_recall': 0.7140736118278179, 'macro_f1': 0.732927017885657, 'weighted_f1': 0.8734235322927868, 'alert_DR': 0.9321536905965622, 'alert_FPR': 0.09502969678024382, 'alert_AUROC': 0.9818762878060667, 'model': 'RandomForest', 'train_time_s': 17.42473077774048, 'infer_ms_per_flow': 0.016113327239583978}]
+  alerts test: FP 2600 TP(sub) 1502 | val: FP 2730 TP(sub) 1501
+  NUN va: valid 0.994
+  NUN te: valid 0.997
+  TRACE/va batch 1/5: valid 0.984 (11s)
+  TRACE/va batch 2/5: valid 0.983 (11s)
+  TRACE/va batch 3/5: valid 0.974 (11s)
+  TRACE/va batch 4/5: valid 0.969 (11s)
+  TRACE/va batch 5/5: valid 0.963 (2s)
+  TRACE/te batch 1/5: valid 0.990 (11s)
+  TRACE/te batch 2/5: valid 0.989 (11s)
+  TRACE/te batch 3/5: valid 0.977 (11s)
+  TRACE/te batch 4/5: valid 0.963 (11s)
+  TRACE/te batch 5/5: valid 1.000 (1s)
+  [budget] paused in Wachter/va
+  Wachter/va batch 1/5: valid 0.989 (7s)
+  Wachter/va batch 2/5: valid 0.986 (1s)
+  Wachter/va batch 3/5: valid 0.988 (1s)
+  Wachter/va batch 4/5: valid 0.982 (1s)
+  Wachter/va batch 5/5: valid 0.978 (0s)
+  Wachter/te batch 1/5: valid 0.988 (1s)
+  Wachter/te batch 2/5: valid 0.988 (1s)
+  Wachter/te batch 3/5: valid 0.988 (1s)
+  Wachter/te batch 4/5: valid 0.980 (1s)
+  Wachter/te batch 5/5: valid 1.000 (0s)
+  TRACE-noplaus/te batch 1/1: valid 0.988 (4s)
+  TRACE-norel/te batch 1/1: valid 0.986 (13s)
+  TRACE-norevert/te batch 1/1: valid 0.982 (13s)
+  GrowingSpheres/te batch 1/10: valid 1.000 (0s)
+  GrowingSpheres/te batch 2/10: valid 1.000 (0s)
+  GrowingSpheres/te batch 3/10: valid 1.000 (0s)
+  GrowingSpheres/te batch 4/10: valid 1.000 (0s)
+  GrowingSpheres/te batch 5/10: valid 1.000 (0s)
+  GrowingSpheres/te batch 6/10: valid 1.000 (0s)
+  GrowingSpheres/te batch 7/10: valid 1.000 (0s)
+  GrowingSpheres/te batch 8/10: valid 1.000 (0s)
+  GrowingSpheres/te batch 9/10: valid 1.000 (0s)
+  GrowingSpheres/te batch 10/10: valid 1.000 (0s)
+  sens_b0.01_g0.0/te batch 1/1: valid 0.997 (1s)
+  sens_b0.01_g0.05/te batch 1/1: valid 0.993 (5s)
+  sens_b0.01_g0.25/te batch 1/1: valid 0.967 (5s)
+  sens_b0.05_g0.0/te batch 1/1: valid 0.993 (1s)
+  sens_b0.05_g0.05/te batch 1/1: valid 0.990 (5s)
+  sens_b0.05_g0.25/te batch 1/1: valid 0.967 (5s)
+  sens_b0.25_g0.0/te batch 1/1: valid 0.753 (2s)
+  sens_b0.25_g0.05/te batch 1/1: valid 0.767 (5s)
+  sens_b0.25_g0.25/te batch 1/1: valid 0.893 (5s)
+           method     n  validity    time_ms  feasible_all  feasible_immutable  feasible_integer  feasible_bounds  feasible_relational  feasible_derived  valid_and_feasible  proximity_median  proximity_mean  sparsity_mean  sparsity_median  plaus_rel_knn_median  in_distribution
+0             NUN  4102  0.996587   0.233459      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.996587          7.263872       10.434280      16.057241             16.0              1.331543         0.883317
+1           TRACE  4102  0.979766  28.500532      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.979766          4.562291        6.510315       6.742224              6.0              3.680314         0.673799
+2         Wachter  4102  0.986348   9.307130      0.000000               1.000             0.000              1.0             0.966387          0.000000            0.000000          4.156825        5.128869      23.504943             25.0              4.794567         0.527682
+3   TRACE-noplaus  1000  0.988000   3.861308      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.988000          4.032831        5.935394       4.109312              3.0              4.801689         0.527328
+4     TRACE-norel  1000  0.986000  13.335889      0.168357               1.000             1.000              1.0             0.960446          0.168357            0.166000          3.519033        5.050854       5.220081              4.0              3.174836         0.708925
+5  TRACE-norevert  1000  0.982000  13.229383      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.982000          8.154244       10.897279      17.916497             19.0              4.356266         0.621181
+6  GrowingSpheres  1000  1.000000   3.473839      0.000000               0.784             0.001              1.0             0.733000          0.123000            0.000000          4.359430        7.047108       6.263000              6.0              4.972746         0.509000
+7     TRACE@bench  1000  0.982000  28.500532      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.982000          4.601152        6.458963       6.741344              6.0              3.619326         0.676171
+8   Wachter@bench  1000  0.992000   9.307130      0.000000               1.000             0.000              1.0             0.964718          0.000000            0.000000          4.228335        5.196037      23.440524             25.0              4.781081         0.524194
+9       NUN@bench  1000  0.998000   0.233459      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.998000          7.281838       10.532198      15.963928             16.0              1.361605         0.868737
+                    score     AUROC  AUROC_lo  AUROC_hi     AUPRC  FP_rate_in_alerts  FP_suppressed@99  TP_lost@99  FP_suppressed@95  TP_lost@95  dAUROC_vs_pbenign_lo  dAUROC_vs_pbenign_hi  no_cf_rate
+0                p_benign  0.889219  0.877325  0.899645  0.906182           0.633837          0.106923    0.009987          0.432692    0.063249              0.000000              0.000000         NaN
+1       uncertainty_1-MSP  0.715761  0.697305  0.733099  0.743246           0.633837          0.016154    0.014647          0.079615    0.056591             -0.191982             -0.156078         NaN
+2                 entropy  0.622049  0.602580  0.641026  0.682940           0.633837          0.014231    0.011318          0.068077    0.059254             -0.287580             -0.244856         NaN
+3    kNN_benign_proximity  0.709615  0.692293  0.725045  0.793370           0.633837          0.076154    0.011984          0.207308    0.061252             -0.195232             -0.163611         NaN
+4                NUN_cost  0.769672  0.753850  0.783959  0.828771           0.633837          0.078846    0.007989          0.234615    0.064581             -0.133032             -0.105468    0.003413
+5            Wachter_cost  0.796455  0.782047  0.809582  0.842542           0.633837          0.058462    0.011318          0.260000    0.057923             -0.104483             -0.080810    0.013652
+6              TRACE_cost  0.792467  0.778631  0.805639  0.855132           0.633837          0.074615    0.008655          0.292692    0.050599             -0.108590             -0.085164    0.020234
+7  Fusion(p_benign+TRACE)  0.889479  0.878001  0.899853  0.907212           0.633837          0.113846    0.011318          0.437308    0.066578             -0.000358              0.000976         NaN
+                  method     n  validity    time_ms  feasible_all  feasible_immutable  feasible_integer  feasible_bounds  feasible_relational  feasible_derived  valid_and_feasible  proximity_median  proximity_mean  sparsity_mean  sparsity_median  plaus_rel_knn_median  in_distribution
+0                    NUN  4102  0.996587   0.233459      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.996587          7.263872       10.434280      16.057241             16.0              1.331543         0.883317
+1       NUN|false_alarms  2600  0.999615   0.233459      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.999615          5.592225        7.381396      15.103501             15.0              1.220222         0.950750
+2        NUN|true_alerts  1502  0.991345   0.233459      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.991345         15.276142       15.762987      17.721961             19.0              1.525000         0.765615
+3                  TRACE  4102  0.979766  28.500532      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.979766          4.562291        6.510315       6.742224              6.0              3.680314         0.673799
+4     TRACE|false_alarms  2600  0.988077  28.500532      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.988077          3.269026        4.403205       5.792526              5.0              3.009830         0.823667
+5      TRACE|true_alerts  1502  0.965379  28.500532      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.965379          8.100393       10.243532       8.424828              8.0              6.401072         0.408276
+6                Wachter  4102  0.986348   9.307130      0.000000               1.000             0.000              1.0             0.966387          0.000000            0.000000          4.156825        5.128869      23.504943             25.0              4.794567         0.527682
+7   Wachter|false_alarms  2600  0.988846   9.307130      0.000000               1.000             0.000              1.0             0.980163          0.000000            0.000000          3.231321        3.788891      24.014002             25.0              3.976733         0.648775
+8    Wachter|true_alerts  1502  0.982024   9.307130      0.000000               1.000             0.000              1.0             0.942373          0.000000            0.000000          7.005835        7.464518      22.617627             24.0              6.907128         0.316610
+9          TRACE-noplaus  1000  0.988000   3.861308      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.988000          4.032831        5.935394       4.109312              3.0              4.801689         0.527328
+10           TRACE-norel  1000  0.986000  13.335889      0.168357               1.000             1.000              1.0             0.960446          0.168357            0.166000          3.519033        5.050854       5.220081              4.0              3.174836         0.708925
+11        TRACE-norevert  1000  0.982000  13.229383      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.982000          8.154244       10.897279      17.916497             19.0              4.356266         0.621181
+12        GrowingSpheres  1000  1.000000   3.473839      0.000000               0.784             0.001              1.0             0.733000          0.123000            0.000000          4.359430        7.047108       6.263000              6.0              4.972746         0.509000
+13           TRACE@bench  1000  0.982000  28.500532      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.982000          4.601152        6.458963       6.741344              6.0              3.619326         0.676171
+14         Wachter@bench  1000  0.992000   9.307130      0.000000               1.000             0.000              1.0             0.964718          0.000000            0.000000          4.228335        5.196037      23.440524             25.0              4.781081         0.524194
+15             NUN@bench  1000  0.998000   0.233459      1.000000               1.000             1.000              1.0             1.000000          1.000000            0.998000          7.281838       10.532198      15.963928             16.0              1.361605         0.868737
+  TRACEw/te batch 1/5: valid 1.000 (17s)
+  TRACEw/te batch 2/5: valid 1.000 (16s)
+  TRACEw/te batch 3/5: valid 1.000 (16s)
+  TRACEw/te batch 4/5: valid 1.000 (16s)
+  TRACEw/te batch 5/5: valid 1.000 (1s)
+  TRACE-noplausw/te batch 1/1: valid 1.000 (3s)
+  TRACE-norelw/te batch 1/1: valid 1.000 (15s)
+  TRACE-norevertw/te batch 1/1: valid 1.000 (14s)
+                           method     n  validity    time_ms  feasible_all  feasible_immutable  feasible_integer  feasible_bounds  feasible_relational  feasible_derived  valid_and_feasible  proximity_median  proximity_mean  sparsity_mean  sparsity_median  plaus_rel_knn_median  in_distribution  warm_share
+0                             NUN  4102  0.996587   0.233459         1.000               1.000             1.000              1.0             1.000000             1.000            0.996587          7.263872       10.434280      16.057241             16.0              1.331543         0.883317         NaN
+1                NUN|false_alarms  2600  0.999615   0.233459         1.000               1.000             1.000              1.0             1.000000             1.000            0.999615          5.592225        7.381396      15.103501             15.0              1.220222         0.950750         NaN
+2                 NUN|true_alerts  1502  0.991345   0.233459         1.000               1.000             1.000              1.0             1.000000             1.000            0.991345         15.276142       15.762987      17.721961             19.0              1.525000         0.765615         NaN
+3                           TRACE  4102  1.000000  68.604644         1.000               1.000             1.000              1.0             1.000000             1.000            1.000000          4.482889        6.005216       6.555826              6.0              2.194862         0.806680    0.862019
+4              TRACE|false_alarms  2600  1.000000  68.604644         1.000               1.000             1.000              1.0             1.000000             1.000            1.000000          2.917473        4.388604       5.784231              5.0              1.839940         0.927692         NaN
+5               TRACE|true_alerts  1502  1.000000  68.604644         1.000               1.000             1.000              1.0             1.000000             1.000            1.000000          8.079262        8.803613       7.891478              7.0              3.701932         0.597204         NaN
+6                TRACE-alertstart  4102  0.979766  28.500532         1.000               1.000             1.000              1.0             1.000000             1.000            0.979766          4.562291        6.510315       6.742224              6.0              3.680314         0.673799         NaN
+7   TRACE-alertstart|false_alarms  2600  0.988077  28.500532         1.000               1.000             1.000              1.0             1.000000             1.000            0.988077          3.269026        4.403205       5.792526              5.0              3.009830         0.823667         NaN
+8    TRACE-alertstart|true_alerts  1502  0.965379  28.500532         1.000               1.000             1.000              1.0             1.000000             1.000            0.965379          8.100393       10.243532       8.424828              8.0              6.401072         0.408276         NaN
+9                         Wachter  4102  0.986348   9.307130         0.000               1.000             0.000              1.0             0.966387             0.000            0.000000          4.156825        5.128869      23.504943             25.0              4.794567         0.527682         NaN
+10           Wachter|false_alarms  2600  0.988846   9.307130         0.000               1.000             0.000              1.0             0.980163             0.000            0.000000          3.231321        3.788891      24.014002             25.0              3.976733         0.648775         NaN
+11            Wachter|true_alerts  1502  0.982024   9.307130         0.000               1.000             0.000              1.0             0.942373             0.000            0.000000          7.005835        7.464518      22.617627             24.0              6.907128         0.316610         NaN
+12                  TRACE-noplaus  1000  1.000000   7.246437         1.000               1.000             1.000              1.0             1.000000             1.000            1.000000          2.830056        3.783207       3.014000              2.0              3.904393         0.600000         NaN
+13                    TRACE-norel  1000  1.000000  28.241827         0.291               1.000             1.000              1.0             0.977000             0.291            0.291000          3.759646        5.453034       5.114000              4.0              2.451353         0.785000         NaN
+14                 TRACE-norevert  1000  1.000000  27.402688         1.000               1.000             1.000              1.0             1.000000             1.000            1.000000          6.477243        8.627146      15.991000             16.0              1.704740         0.842000         NaN
+15                 GrowingSpheres  1000  1.000000   3.473839         0.000               0.784             0.001              1.0             0.733000             0.123            0.000000          4.359430        7.047108       6.263000              6.0              4.972746         0.509000         NaN
+16                    TRACE@bench  1000  1.000000  68.604644         1.000               1.000             1.000              1.0             1.000000             1.000            1.000000          4.553050        5.975991       6.480000              5.5              2.173226         0.793000         NaN
+17         TRACE-alertstart@bench  1000  0.982000  28.500532         1.000               1.000             1.000              1.0             1.000000             1.000            0.982000          4.601152        6.458963       6.741344              6.0              3.619326         0.676171         NaN
+18                  Wachter@bench  1000  0.992000   9.307130         0.000               1.000             0.000              1.0             0.964718             0.000            0.000000          4.228335        5.196037      23.440524             25.0              4.781081         0.524194         NaN
+19                      NUN@bench  1000  0.998000   0.233459         1.000               1.000             1.000              1.0             1.000000             1.000            0.998000          7.281838       10.532198      15.963928             16.0              1.361605         0.868737         NaN
+PIPELINE COMPLETE

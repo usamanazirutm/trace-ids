@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "TRACE: Traffic-Realisable Actionable Counterfactual Explanations for IoT Intrusion Detection"
+version: 1.0.0
+date-released: 2026-10-27
+license: MIT
+repository-code: "https://github.com/usamanazirutm/trace-ids"
+authors:
+  - family-names: Nazir
+    given-names: Muhammad Usama
+    affiliation: "Faculty of Computing, Universiti Teknologi Malaysia"
+  - family-names: Ngadi
+    given-names: Md Asri
+    affiliation: "Faculty of Computing, Universiti Teknologi Malaysia"
+keywords:
+  - intrusion detection
+  - Internet of Things
+  - explainable AI
+  - counterfactual explanations
+  - feasibility constraints

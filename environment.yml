@@ -1,0 +1,13 @@
+name: trace-ids
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pytorch=2.14.1=cpu*
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - pyarrow
+  - py-xgboost-cpu=2.1.4

@@ -1,0 +1,11 @@
+{
+  "title": "TRACE: Traffic-Realisable Actionable Counterfactual Explanations for IoT Intrusion Detection",
+  "upload_type": "software",
+  "description": "Code, configuration and summary results for the manuscript on feasible counterfactual explanations for deep-learning-based IoT intrusion detection (UNSW-NB15, CICIoT2023).",
+  "creators": [
+    {"name": "Nazir, Muhammad Usama", "affiliation": "Universiti Teknologi Malaysia"},
+    {"name": "Ngadi, Md Asri", "affiliation": "Universiti Teknologi Malaysia"}
+  ],
+  "license": "MIT",
+  "keywords": ["intrusion detection", "IoT", "explainable AI", "counterfactual explanations", "feasibility constraints"]
+}

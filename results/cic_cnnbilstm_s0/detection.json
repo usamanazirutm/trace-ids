@@ -1,0 +1,16 @@
+{
+ "accuracy": 0.734009450270831,
+ "macro_precision": 0.6074525015884567,
+ "macro_recall": 0.5517900322344759,
+ "macro_f1": 0.5503479329456983,
+ "weighted_f1": 0.7238605794345324,
+ "alert_DR": 0.9563615467820443,
+ "alert_FPR": 0.17076502732240437,
+ "alert_AUROC": 0.9771955233043665,
+ "model": "cnnbilstm",
+ "seed": 0,
+ "train_time_s": 1032.155198097229,
+ "epochs": 30,
+ "infer_ms_per_flow": 0.09121232776305527,
+ "params": 79202
+}
